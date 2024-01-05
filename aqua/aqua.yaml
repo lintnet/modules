@@ -7,6 +7,7 @@
 #   supported_envs:
 #   - all
 registries:
-- type: standard
-  ref: v4.113.0 # renovate: depName=aquaproj/aqua-registry
-packages: null
+  - type: standard
+    ref: v4.113.0 # renovate: depName=aquaproj/aqua-registry
+packages:
+  - import: imports/*.yaml
