@@ -14,7 +14,7 @@ Examples of [lintnet Modules](https://lintnet.github.io/docs/module)
 ### Imported modules
 
 ```jsonnet
-local hello = import 'github.com/lintnet/modules/modules/hello.jsonnet@60a46a4fa4c0e7b1b95f57c479e756afa2f376e9:v0.1.0';
+local hello = import 'github.com/lintnet/modules/modules/hello/hello.jsonnet@60a46a4fa4c0e7b1b95f57c479e756afa2f376e9:v0.1.0';
 ```
 
 ### Lint rule module
