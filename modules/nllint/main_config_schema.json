@@ -1,0 +1,12 @@
+{
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "additionalProperties": false,
+   "type": "object",
+   "description": "config",
+   "properties": {
+      "trim_space": {
+         "type": "boolean",
+         "description": "If true, leading and trailing white spaces are disallowed"
+      }
+   }
+}
