@@ -9,7 +9,7 @@
          "description": "A list of excluded actions",
          "items": {
             "type": "string",
-            "description": "action. e.g. actions/checkout@v3"
+            "description": "action. e.g. actions/checkout"
          }
       }
    }
