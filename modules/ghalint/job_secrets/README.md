@@ -1,0 +1,3 @@
+# job_secrets
+
+https://github.com/suzuki-shunsuke/ghalint/blob/main/docs/policies/006.md
