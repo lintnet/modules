@@ -6,6 +6,7 @@ Examples of [lintnet Modules](https://lintnet.github.io/docs/module)
 
 - [array](modules/array): [Imported modules](https://lintnet.github.io/docs/module#2-imported-module) for array
 - [ghalint](modules/ghalint): Port of [suzuki-shunsuke/ghalint](https://github.com/suzuki-shunsuke/ghalint), which is a linter for GitHub Actions
+- [github_actions](modules/github_actions): Modules regarding GitHub Actions
 - [hello](modules/hello): Example module
 - [nllint](modules/nllint): Port of [suzuki-shunsuke/nllint](https://github.com/suzuki-shunsuke/nllint), which is a linter to check newlines at the end of files
 
