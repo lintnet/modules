@@ -13,6 +13,10 @@ function(param) {
         '.github/workflows/*.yaml',
       ],
       modules: [
+        // without config
+        'github.com/lintnet/modules/modules/ghalint/action_ref_should_be_full_length_commit_sha/main.jsonnet@60a46a4fa4c0e7b1b95f57c479e756afa2f376e9:v0.1.0',
+
+        // with config
         {
           path: 'github.com/lintnet/modules/modules/ghalint/action_ref_should_be_full_length_commit_sha/main.jsonnet@60a46a4fa4c0e7b1b95f57c479e756afa2f376e9:v0.1.0',
           config: {
