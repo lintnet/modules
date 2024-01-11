@@ -33,4 +33,4 @@ function(param) {
 
 ## config's schema
 
-[JSON Schema](config_schema.json)
+[JSON Schema](main_config_schema.json)
