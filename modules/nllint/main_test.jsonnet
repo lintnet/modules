@@ -1,12 +1,12 @@
 function(param) [
   {
     name: 'pass',
-    data_file: '../README.md',
+    data_file: 'main.jsonnet',
     result: [],
   },
   {
     name: 'pass trim space',
-    data_file: '../README.md',
+    data_file: 'main.jsonnet',
     param: {
       config: {
         trim_space: true,

@@ -20,7 +20,7 @@ function(param) sort([
       uses: job.value.uses,
     },
   }
-  for job in std.objectKeysValues(param.data.value.jobs)
+  for job in std.objectKeysValues(param.data.value[0].jobs)
   if check(job.value, param)
 ] + [
   {
@@ -32,7 +32,7 @@ function(param) sort([
       uses: step.uses,
     },
   }
-  for job in std.objectKeysValues(param.data.value.jobs)
+  for job in std.objectKeysValues(param.data.value[0].jobs)
   for step in std.get(job.value, 'steps', [])
   if check(step, param)
 ])

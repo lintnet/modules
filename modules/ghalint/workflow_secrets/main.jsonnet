@@ -10,6 +10,6 @@ function(param) [
       env: env.key,
     },
   }
-  for env in sort(std.objectKeysValues(std.get(param.data.value, 'env', {})))
+  for env in sort(std.objectKeysValues(std.get(param.data.value[0], 'env', {})))
   if match('\\${{ *github\\.token *}}', env.value) || match('\\${{ *secrets\\.', env.value)
 ]

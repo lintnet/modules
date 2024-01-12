@@ -1,6 +1,6 @@
 function(param)
   local workflow_names = std.set(std.map(
-    function(data) data.value.name,
+    function(data) data.value[0].name,
     param.combined_data
   ));
 
@@ -14,7 +14,7 @@ function(param)
       location: {
         workflow_name: workflow_name,
         files: std.filterMap(
-          function(data) data.value.name == workflow_name,
+          function(data) data.value[0].name == workflow_name,
           function(data) data.file_path,
           param.combined_data
         ),
