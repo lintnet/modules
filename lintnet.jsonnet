@@ -5,12 +5,10 @@ function(param) {
     {
       data_files: [
         '**/*',
-        '!.git/**',
-        '!testdata/*',
+        '!**/testdata/*',
       ],
       lint_files: [
-        'nllint/**/*.jsonnet',
-        '!nllint/**/*_test.jsonnet',
+        'modules/nllint/main.jsonnet',
       ],
     },
     {
@@ -19,8 +17,8 @@ function(param) {
         '.github/workflows/*.yaml',
       ],
       lint_files: [
-        'ghalint/**/*.jsonnet',
-        '!ghalint/**/*_test.jsonnet',
+        'modules/ghalint/**/main.jsonnet',
+        'modules/github_actions/**/main.jsonnet',
       ],
     },
   ],

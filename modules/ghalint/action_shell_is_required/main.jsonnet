@@ -15,6 +15,6 @@ function(param) sort(
         [if std.objectHas(step, 'id') then 'step_id']: step.id,
       },
     },
-    std.get(std.get(param.data.value, 'runs', {}), 'steps', [])
+    std.get(std.get(param.data.value[0], 'runs', {}), 'steps', [])
   )
 )

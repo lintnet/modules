@@ -5,6 +5,6 @@ function(param) [
       job_name: job.key,
     },
   }
-  for job in std.objectKeysValues(param.data.value.jobs)
+  for job in std.objectKeysValues(param.data.value[0].jobs)
   if std.get(job.value, 'secrets', '') == 'inherit'
 ]

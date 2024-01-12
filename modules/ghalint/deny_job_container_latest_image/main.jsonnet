@@ -17,7 +17,7 @@ function(param) sort([
       name: job.key,
       image: if std.type(container) == 'string' then container else std.get(container, 'image', ''),
     }
-    for job in std.objectKeysValues(param.data.value.jobs)
+    for job in std.objectKeysValues(param.data.value[0].jobs)
   ]
   if std.endsWith(job.image, ':latest')
 ])

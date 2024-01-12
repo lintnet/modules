@@ -4,21 +4,21 @@ function(param) [
     param: {
       combined_data: [
         {
-          value: {
+          value: [{
             name: 'build',
-          },
+          }],
           file_path: '.github/workflows/build.yaml',
         },
         {
-          value: {
+          value: [{
             name: 'build',
-          },
+          }],
           file_path: '.github/workflows/test.yaml',
         },
         {
-          value: {
+          value: [{
             name: 'release',
-          },
+          }],
           file_path: '.github/workflows/release.yaml',
         },
       ],
@@ -26,6 +26,9 @@ function(param) [
     result: [
       {
         name: 'GitHub Actions workflow name must be unique',
+        description: |||
+          The duplicate of workflow names may cause issues.
+        |||,
         location: {
           workflow_name: 'build',
           files: [
@@ -41,21 +44,21 @@ function(param) [
     param: {
       combined_data: [
         {
-          value: {
+          value: [{
             name: 'build',
-          },
+          }],
           file_path: '.github/workflows/build.yaml',
         },
         {
-          value: {
+          value: [{
             name: 'test',
-          },
+          }],
           file_path: '.github/workflows/test.yaml',
         },
         {
-          value: {
+          value: [{
             name: 'release',
-          },
+          }],
           file_path: '.github/workflows/release.yaml',
         },
       ],
