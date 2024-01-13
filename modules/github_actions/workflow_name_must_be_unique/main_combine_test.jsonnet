@@ -26,9 +26,6 @@ function(param) [
     result: [
       {
         name: 'GitHub Actions workflow name must be unique',
-        description: |||
-          The duplicate of workflow names may cause issues.
-        |||,
         location: {
           workflow_name: 'build',
           files: [
