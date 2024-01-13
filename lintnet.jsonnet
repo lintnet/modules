@@ -18,16 +18,7 @@ function(param) {
       ],
       lint_files: [
         'modules/ghalint/**/main.jsonnet',
-      ],
-    },
-    {
-      combine: true,
-      data_files: [
-        '.github/workflows/*.yml',
-        '.github/workflows/*.yaml',
-      ],
-      lint_files: [
-        'modules/github_actions/**/main.jsonnet',
+        'modules/github_actions/**/main_combine.jsonnet',
       ],
     },
   ],
