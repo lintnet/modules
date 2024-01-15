@@ -15,7 +15,7 @@ Examples of [lintnet Modules](https://lintnet.github.io/docs/module)
 ### Imported modules
 
 ```jsonnet
-local hello = import 'github.com/lintnet/modules/modules/hello/hello.jsonnet@d69d0083dcb2696dd3427c484f36940f717a9285:v0.1.2';
+local hello = import 'github_archive/github.com/lintnet/modules/modules/hello/hello.jsonnet@d69d0083dcb2696dd3427c484f36940f717a9285:v0.1.2';
 ```
 
 ### Lint rule module
@@ -28,7 +28,7 @@ function(param) {
         '**/*',
       ],
       modules: [
-        'github.com/lintnet/modules/modules/nllint/main.jsonnet@d69d0083dcb2696dd3427c484f36940f717a9285:v0.1.2',
+        'github_archive/github.com/lintnet/modules/modules/nllint/main.jsonnet@d69d0083dcb2696dd3427c484f36940f717a9285:v0.1.2',
       ],
     },
   ],
