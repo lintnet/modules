@@ -2,6 +2,15 @@
 
 Examples of [lintnet Modules](https://lintnet.github.io/docs/module)
 
+## :warning: Deprecated. Moved to lintnet-modules
+
+https://github.com/lintnet-modules
+
+- [ghalint](https://github.com/lintnet-modules/ghalint)
+- [nllint](https://github.com/lintnet-modules/nllint)
+- [github-actions](https://github.com/lintnet-modules/github-actions)
+- etc
+
 ## Modules
 
 - [array](modules/array): [Imported modules](https://lintnet.github.io/docs/module#2-imported-module) for array
